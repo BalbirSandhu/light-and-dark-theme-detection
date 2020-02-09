@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto Light/Dark Theme Detection With CSS</title>
+    <style>
+    *{box-sizing: border-box;} 
+    body{padding:0px; margin: 0px; font-family: Georgia, 'Times New Roman', Times, serif;}    
+    .wrapper{width:100%; max-width: 1000px; padding:0 15px; margin: auto;}
+    .listing{width: 100%;display: flex; justify-content: space-between; flex-wrap: wrap;}
+    .card{max-width:30%;}   
+    img{max-width: 100%;}
+    p{font-size: 14px; margin: 0px 0 20px; padding: 0px; }
+    h3{font-size: 18px; margin: 10px 0 5px; padding: 0px; font-family: Georgia, 'Times New Roman', Times, serif;}
+    h1{font-size: 22px;margin: 20px 0 24px;}
+    @media(max-width: 767px){.card{max-width:100%;}}
+
+
+    /* for detecting Light theme */
+    @media(prefers-color-scheme: light){
+        body{background: #fff;}
+    }
+     /* for detecting dark theme */
+     @media(prefers-color-scheme: light){
+        body{background: #000;}
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Automatically detect Light/Dark theme on browser with CSS</h1>
+      
+        <div class="listing">
+            <div class="card">
+                <div class="img">
+                    <img src="img/p2.jpg" alt="Demo IMG 1" />
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/p5.jpg" alt="Demo IMG 1" />
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/p3.jpg" alt="Demo IMG 1" />
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/p4.jpg" alt="Demo IMG 1" />
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/p6.jpg" alt="Demo IMG 1" />
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/p7.jpg" alt="Demo IMG 1" />
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
